@@ -2,6 +2,8 @@
 body{
     background-color: #1D1D1D;
     color: whitesmoke;
+    padding: 0;
+    margin: 0;
 }
 
 /* NAV */
@@ -51,6 +53,10 @@ body{
 }
 
 @media screen and (max-width: 767px) {
+
+    .header-background{
+        padding: 0;
+    }
     
     .row2-header{
         display: flex;
@@ -76,51 +82,39 @@ body{
     }
 }
 
-/* SECTIONE ONE */
-.container-section1{
-    height: 100vh;
+/* SECTION ONE */
+.contenitoreUp{
+    margin-top: 50px;
 }
-
+.contenitoreDown{
+    margin-bottom: 50px;
+}
+ 
 .title-section1, .title-section2{
     font-size: 70px;
     font-weight: 100;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.heigth-div-section1{
+    height: max-content;
 }
 
 .p1-section1{
-    padding: 0 70px;
+    padding: 0 30px;
     margin: 20px 0;
-    text-align: center;
-}
-
-.positioning-img2{
-    position: relative;
-    padding: 0;
     display: flex;
-    justify-content: end;
+    justify-content: center; 
 }
 
-.div-img2{
-    width: 450px;
-    margin: 0;
+.border-p1-section1{
+    border-left: 10px solid #9B9412;
 }
 
-.positioning-img3{
-    position: absolute;
-    padding: 0;
-    left: 0;
-    top: 150%;
-}
-
-.div-img3{
-    width: 600px;
-    margin: 0;
-}
-
-.p2-section1{
-    padding: 20px 70px;
-    margin: 0;
-    text-align: center;
+.display-mobile{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -131,56 +125,27 @@ body{
     }
 
     .p1-section1{
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
-    .positioning-img3{
-        display: none; 
+    .display-mobile{
+        display: none;
     }
 
-    .positioning-img2{
-        position: relative;
-        padding: 0;
-        display: flex;
-        justify-content: center;
+    .contenitoreUp{
+        margin-top: 20px;
+    }
+    .contenitoreDown{
+        margin-bottom: 20px;
     }
 
-    .div-img2{
-        width: 350px;
-        margin: 0;
-    }
 }
 
 /* SECTION TWO */
-.container1-section2{
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.container2-section2{
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.row2-section2{
-    padding: 0 100px;
-}
 
 @media screen and (max-width: 767px) {
-
-    .container1-section2, .container2-section2{
-        all: unset;
-    }
-    .row2-section2{
-        padding: 20px 50px;
-    }
-
-    .margin-foto-section2{
-        margin: 10px 0;
-        padding: 0;
+    .big-img-mobile{
+        margin: 20px 0;
     }
 }
 
