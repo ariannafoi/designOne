@@ -36,10 +36,12 @@ body{
 
 .title{
     text-transform: uppercase;
-    font-size: 130px;
-    font-weight: 300;
-    letter-spacing: 10px;
+    font-size: 120px;
+    letter-spacing: 8px;
     margin: 0;
+    font-family: 'DM Serif Display', serif;
+    text-shadow: 1px 3px 100px rgb(193, 187, 74);
+    text-wrap: wrap;
 }
 
 .btn-header{
@@ -95,6 +97,7 @@ body{
     font-weight: 100;
     text-transform: uppercase;
     text-align: center;
+    color: rgb(193, 187, 74);
 }
 
 .heigth-div-section1{
@@ -109,7 +112,7 @@ body{
 }
 
 .border-p1-section1{
-    border-left: 10px solid #9B9412;
+    border-left: 10px solid rgb(193, 187, 74);
 }
 
 .display-mobile{
@@ -160,6 +163,7 @@ body{
     font-size: 50px;
     font-weight: 100;
     text-transform: uppercase;
+    color: rgb(193, 187, 74);
 }
 
 .subtitle-section3{
@@ -213,7 +217,7 @@ body{
 .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #9B9412;
+    color: white;
     font-size: 12px;
 }
 
