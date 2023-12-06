@@ -32,6 +32,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
 }
 
 .title{
@@ -42,16 +43,6 @@ body{
     font-family: 'DM Serif Display', serif;
     text-shadow: 1px 3px 100px rgb(193, 187, 74);
     text-wrap: wrap;
-}
-
-.btn-header{
-    border: 1px solid whitesmoke;
-    border-radius: 20px;
-    background-color: transparent;
-    color: whitesmoke;
-    font-size: 20px;
-    padding: 5px 50px;
-    text-transform: uppercase;
 }
 
 @media screen and (max-width: 767px) {
@@ -71,16 +62,6 @@ body{
         font-size: 40px;
         font-weight: 300;
         letter-spacing: 2px;
-    }
-
-    .btn-header{
-        border: 1px solid whitesmoke;
-        border-radius: 30px;
-        background-color: transparent;
-        color: whitesmoke;
-        font-size: 20px;
-        padding: 5px 25px;
-        text-transform: lowercase;
     }
 }
 
@@ -140,6 +121,10 @@ body{
     }
     .contenitoreDown{
         margin-bottom: 20px;
+    }
+
+    .border-p1-section1{
+       overflow-x: hidden;
     }
 
 }
@@ -225,6 +210,23 @@ body{
     height: 100vh;
 }
 
+.btn-submit{
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 5px 50px;
+    text-transform: uppercase;
+}
+
+.cursorImg{
+    cursor: pointer;
+}
+.div-titles{
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 767px) {
     .container-section1, .container-section2{
         all: unset;
@@ -253,11 +255,22 @@ body{
         background-size: cover;
         padding: 0;
     }
+    .margin-title-section3, .form-custom, .cursorImg, .div-titles{
+        overflow-x: hidden;
+    }
+
+    .btn-submit{
+        border: 1px solid whitesmoke;
+        border-radius: 30px;
+        background-color: transparent;
+        color: whitesmoke;
+        font-size: 20px;
+        padding: 5px 25px;
+        text-transform: lowercase;
+    }
 }
 
-.cursorImg{
-    cursor: pointer;
-}
+
 
 #fullImageView{
     display: none;
@@ -284,4 +297,44 @@ body{
     font-size: 30px;
     color: whitesmoke;
     cursor: pointer;
+}
+
+/* BACKGROUND-ATTACHMENT SECTION */
+
+.container-bg1{
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./img/bg1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-bg2{
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./img/bg2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+    .header-background{
+        background-attachment: unset;
+        background-position-x: 45%;
+    }
+    .container-bg1{
+        height: 75vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./img/bg1-mobile.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .container-bg2{
+        height: 75vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./img/bg2-mobile.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
