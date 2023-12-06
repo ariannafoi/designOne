@@ -251,6 +251,9 @@ body{
     }
 }
 
+.cursorImg{
+    cursor: pointer;
+}
 
 #fullImageView{
     display: none;
